@@ -75,6 +75,7 @@ It serves as both a course assignment and a portfolio-ready demonstration of ful
 
 ---
 
-## Resources
+## Project Files
 
-- Resource folder containing assets and supplementary materials  
+- [Resources](resources/)
+ 
