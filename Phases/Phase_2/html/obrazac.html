@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="David Sedlan">
+    <meta name="keywords" content="AI alati, obrazac, validacija, kontakt">
+    <meta name="description" content="Kontakt obrazac za AI alate">
+    <title>AI Alati - Obrazac validacija</title>
+    <link rel="stylesheet" href="/dizajn/dsedlan.css">
+    <link rel="stylesheet" href="/dizajn/dsedlan-responzivnost.css">
+    <script src="/JSklijent/dsedlan.js"></script>
+    <script src="/JSklijent/dsedlan_obrazac.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-sadrzaj">
+            <a href="/index" class="logo-link">
+                <img src="/resursi/slike/logo_stranice.jpg" alt="AI Alati Logo" class="logo">
+            </a>
+            <h1 class="naslov-stranice">AI Alati</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/index">Početna</a></li>
+                <li><a href="/dokumentacija">Dokumentacija</a></li>
+                <li><a href="/autor">Autor</a></li>
+                <li><a href="/primjene">Primjene AI alata</a></li>
+                <li><a href="/resursiStranice">Resursi</a></li>
+                <li><a href="/obrazac">Obrazac validacija</a></li>
+                <li><a href="/alati">Alati</a></li>
+                <li><a href="/api/alati">API Alati</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="poruka-greske" class="poruka-greske"></div>
+        <section id="obrazac-kontakt">
+            <h2>Kontakt obrazac</h2>
+            <form action="https://spider.foi.hr/OWT/materijali/ispis_forme.php" method="POST" enctype="multipart/form-data" novalidate>
+                <div class="obrazac-grupa">
+                    <label for="ime">Ime:</label>
+                    <input type="text" id="ime" name="ime">
+                </div>
+
+                <div class="obrazac-grupa">
+                    <label for="prezime">Prezime:</label>
+                    <input type="text" id="prezime" name="prezime">
+                </div>
+
+                <div class="obrazac-grupa">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="obrazac-grupa">
+                    <label for="datum">Datum rođenja:</label>
+                    <input type="date" id="datum" name="datum">
+                </div>
+
+                <div class="obrazac-grupa">
+                    <label for="alat">Omiljeni AI alat:</label>
+                    <select id="alat" name="alat">
+                        <option value="">Odaberite alat</option>
+                        <option value="chatgpt">ChatGPT</option>
+                        <option value="dalle">DALL·E</option>
+                        <option value="copilot">GitHub Copilot</option>
+                    </select>
+                </div>
+
+                <div class="obrazac-grupa">
+                    <label for="uvjeti">
+                        <input type="checkbox" id="uvjeti" name="uvjeti">
+                        Prihvaćam uvjete korištenja
+                    </label>
+                </div>
+
+                <div class="obrazac-grupa">
+                    <label>Spol:</label>
+                    <div class="radio-grupa">
+                        <input type="radio" id="musko" name="spol" value="musko">
+                        <label for="musko">Muško</label>
+                        <input type="radio" id="zensko" name="spol" value="zensko">
+                        <label for="zensko">Žensko</label>
+                    </div>
+                </div>
+
+                <div class="obrazac-grupa">
+                    <label for="iskustvo">Godine iskustva:</label>
+                    <input type="text" id="iskustvo" name="iskustvo">
+                </div>
+
+                <div class="obrazac-grupa">
+                    <label for="lozinka">Lozinka za vaš AI račun:</label>
+                    <input type="password" id="lozinka" name="lozinka">
+                </div>
+
+                <div class="obrazac-grupa">
+                    <label for="ponovljena-lozinka">Ponovite lozinku za vaš AI račun:</label>
+                    <input type="password" id="ponovljena-lozinka" name="ponovljena-lozinka">
+                </div>
+
+                <div class="obrazac-grupa">
+                    <label for="komentar">Komentar:</label>
+                    <textarea id="komentar" name="komentar" rows="4"></textarea>
+                </div>
+
+                <div class="obrazac-grupa">
+                    <label for="url">Poveznica na vaš AI alat:</label>
+                    <input type="url" id="url" name="url">
+                </div>
+
+                <div class="obrazac-grupa">
+                    <label for="datoteka">Priložite dokument za analizu AI alatom:</label>
+                    <input type="file" id="datoteka" name="datoteka" accept=".pdf,.doc,.docx">
+                </div>
+
+                <div class="obrazac-grupa">
+                    <label for="telefon">Telefon:</label>
+                    <input type="tel" id="telefon" name="telefon" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    <small>Format: 123-456-7890</small>
+                </div>
+
+                <div class="obrazac-grupa">
+                    <label for="boja">Preferirana boja sučelja AI alata:</label>
+                    <input type="color" id="boja" name="boja" value="#000000">
+                </div>
+
+                <div class="obrazac-grupa">
+                    <label for="ocjena">Ocijeni korisnost AI alata (1–10):</label>
+                    <input type="range" id="ocjena" name="ocjena" min="1" max="10" value="5" oninput="this.nextElementSibling.value = this.value">
+                    <output class="ocjena-vrijednost">5</output>
+                </div>
+
+                <div class="obrazac-grupa">
+                    <label for="vrijeme-kontakta">Preferirano vrijeme za kontakt:</label>
+                    <input type="time" id="vrijeme-kontakta" name="vrijeme-kontakta">
+                </div>
+
+                <div class="obrazac-grupa gumbi">
+                    <button type="submit">Pošalji</button>
+                    <button type="reset">Očisti</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-ikone">
+            <a href="https://chat.openai.com/" target="_blank" title="ChatGPT">
+                <img src="/resursi/slike/GPT_logo.png" alt="ChatGPT ikona">
+            </a>
+            <a href="https://openai.com/dall-e-3" target="_blank" title="DALL·E">
+                <img src="/resursi/slike/DALLE_logo.webp" alt="DALL·E ikona">
+            </a>
+            <a href="https://github.com/features/copilot" target="_blank" title="GitHub Copilot">
+                <img src="/resursi/slike/Github_copilot.jpg" alt="GitHub Copilot ikona">
+            </a>
+        </div>
+        <p class="footer-autor">David Sedlan &copy; 2025</p>
+        <div class="footer-validacija">
+            <a href="http://validator.w3.org/check?uri=spider.foi.hr/OWT/2025/zadaca_01/dsedlan22/html/obrazac.html">
+                <img width="35" height="35" src="https://spider.foi.hr/OWT/materijali/slike/HTML5.png" alt="Valid HTML5">
+            </a>
+        </div>
+    </footer>
+</body>
+</html> 
