@@ -77,5 +77,5 @@ It serves as both a course assignment and a portfolio-ready demonstration of ful
 
 ## Project Files
 
-- [Resources](resources/)
+- [Resources](phases/)
  
