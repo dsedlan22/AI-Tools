@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="David Sedlan">
+    <meta name="keywords" content="AI alati, umjetna inteligencija, ChatGPT, DALL·E, GitHub Copilot">
+    <meta name="description" content="Web stranica o AI alatima">
+    <title>AI Alati - Početna</title>
+    <link rel="stylesheet" href="css/dsedlan.css">
+    <link rel="stylesheet" href="css/dsedlan-responzivnost.css">
+    <script src="js/dsedlan.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-sadrzaj">
+            <a href="index.html" class="logo-link">
+                <img src="resursi/slike/logo_stranice.jpg" alt="AI Alati Logo" class="logo">
+            </a>
+            <h1 class="naslov-stranice">AI Alati</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="aktivna">Početna</a></li>
+                <li><a href="html/dokumentacija.html">Dokumentacija</a></li>
+                <li><a href="html/autor.html">Autor</a></li>
+                <li><a href="html/primjene.html">Primjene AI alata</a></li>
+                <li><a href="html/resursi.html">Resursi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="klizac">
+            <div class="klizac-kontejner">
+                <input type="radio" name="klizac-slajd" id="slajd1" checked>
+                <input type="radio" name="klizac-slajd" id="slajd2">
+                <input type="radio" name="klizac-slajd" id="slajd3">
+                
+                <!-- Kontrole za slajd 1 -->
+                <label for="slajd3" class="strelica strelica-lijevo slajd1-lijevo">←</label>
+                <label for="slajd2" class="strelica strelica-desno slajd1-desno">→</label>
+                
+                <!-- Kontrole za slajd 2 -->
+                <label for="slajd1" class="strelica strelica-lijevo slajd2-lijevo">←</label>
+                <label for="slajd3" class="strelica strelica-desno slajd2-desno">→</label>
+                
+                <!-- Kontrole za slajd 3 -->
+                <label for="slajd2" class="strelica strelica-lijevo slajd3-lijevo">←</label>
+                <label for="slajd1" class="strelica strelica-desno slajd3-desno">→</label>
+                
+                <div class="klizac-slajdovi">
+                    <div class="slajd">
+                        <h2 class="naslov-slajda">ChatGPT</h2>
+                        <p class="opis-slajda">Napredni AI chatbot razvijen od strane OpenAI-a, sposoban za razumijevanje i generiranje prirodnog jezika.</p>
+                        <a href="html/detalji.html#chatgpt" class="gumb-slajda" target="_blank">Detalji</a>
+                    </div>
+                    <div class="slajd">
+                        <h2 class="naslov-slajda">DALL·E</h2>
+                        <p class="opis-slajda">AI model za generiranje slika iz tekstualnih opisa, također razvijen od strane OpenAI-a.</p>
+                        <a href="html/detalji.html#dalle" class="gumb-slajda" target="_blank">Detalji</a>
+                    </div>
+                    <div class="slajd">
+                        <h2 class="naslov-slajda">GitHub Copilot</h2>
+                        <p class="opis-slajda">AI asistent za programiranje koji pomaže u pisanju koda, razvijen u suradnji GitHub-a i OpenAI-a.</p>
+                        <a href="html/detalji.html#copilot" class="gumb-slajda" target="_blank">Detalji</a>
+                    </div>
+                </div>
+
+                <div class="kontrole-klizaca">
+                    <label for="slajd1"></label>
+                    <label for="slajd2"></label>
+                    <label for="slajd3"></label>
+                </div>
+            </div>
+        </div>
+
+        <h1>Dobrodošli u svijet AI alata</h1>
+        <p>Ova web aplikacija predstavlja pregled najnovijih AI alata i tehnologija.</p>
+
+        <section class="cpp-sekcija">
+            <h2>Često postavljana pitanja</h2>
+            
+            <!-- Tablica CPP -->
+            <table class="cpp-tablica" id="cpp-tablica">
+                <thead>
+                    <tr>
+                        <th>Pitanje</th>
+                        <th>Odgovor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Što je umjetna inteligencija?</td>
+                        <td>Umjetna inteligencija je područje računarstva koje se bavi razvojem sustava sposobnih za obavljanje zadataka koji obično zahtijevaju ljudsku inteligenciju.</td>
+                    </tr>
+                    <tr>
+                        <td>Kako ChatGPT razumije i generira tekst?</td>
+                        <td>ChatGPT koristi duboko učenje i velike jezične modele za razumijevanje konteksta i generiranje prirodnog jezika.</td>
+                    </tr>
+                    <tr>
+                        <td>Može li DALL·E generirati bilo koju sliku?</td>
+                        <td>DALL·E može generirati slike na temelju tekstualnih opisa, ali postoje određena ograničenja u sadržaju i kvaliteti generiranih slika.</td>
+                    </tr>
+                    <tr>
+                        <td>Kako GitHub Copilot pomaže programerima?</td>
+                        <td>GitHub Copilot predlaže cijele blokove koda i pojedinačne linije dok programer piše, uštedivši vrijeme i poboljšavši produktivnost.</td>
+                    </tr>
+                    <tr>
+                        <td>Jesu li AI alati sigurni za korištenje?</td>
+                        <td>AI alati su sigurni za korištenje, ali je važno biti svjestan njihovih ograničenja i potencijalnih rizika vezanih uz privatnost i sigurnost podataka.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Sklopivi CPP -->
+            <div class="cpp-sklopivi" id="cpp-sklopivi">
+                <div class="sklopivi-element">
+                    <input type="checkbox" id="cpp1">
+                    <label for="cpp1">Što je umjetna inteligencija?</label>
+                    <div class="sklopivi-sadrzaj">
+                        <p>Umjetna inteligencija je područje računarstva koje se bavi razvojem sustava sposobnih za obavljanje zadataka koji obično zahtijevaju ljudsku inteligenciju.</p>
+                    </div>
+                </div>
+
+                <div class="sklopivi-element">
+                    <input type="checkbox" id="cpp2">
+                    <label for="cpp2">Kako ChatGPT razumije i generira tekst?</label>
+                    <div class="sklopivi-sadrzaj">
+                        <p>ChatGPT koristi duboko učenje i velike jezične modele za razumijevanje konteksta i generiranje prirodnog jezika.</p>
+                    </div>
+                </div>
+
+                <div class="sklopivi-element">
+                    <input type="checkbox" id="cpp3">
+                    <label for="cpp3">Može li DALL·E generirati bilo koju sliku?</label>
+                    <div class="sklopivi-sadrzaj">
+                        <p>DALL·E može generirati slike na temelju tekstualnih opisa, ali postoje određena ograničenja u sadržaju i kvaliteti generiranih slika.</p>
+                    </div>
+                </div>
+
+                <div class="sklopivi-element">
+                    <input type="checkbox" id="cpp4">
+                    <label for="cpp4">Kako GitHub Copilot pomaže programerima?</label>
+                    <div class="sklopivi-sadrzaj">
+                        <p>GitHub Copilot predlaže cijele blokove koda i pojedinačne linije dok programer piše, uštedivši vrijeme i poboljšavši produktivnost.</p>
+                    </div>
+                </div>
+
+                <div class="sklopivi-element">
+                    <input type="checkbox" id="cpp5">
+                    <label for="cpp5">Jesu li AI alati sigurni za korištenje?</label>
+                    <div class="sklopivi-sadrzaj">
+                        <p>AI alati su sigurni za korištenje, ali je važno biti svjestan njihovih ograničenja i potencijalnih rizika vezanih uz privatnost i sigurnost podataka.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ai-sekcija">
+            <h2>Budućnost umjetne inteligencije</h2>
+            <p class="istaknuto">
+                Umjetna inteligencija (UI) predstavlja revolucionarni korak u razvoju tehnologije, transformirajući način na koji živimo, radimo i komuniciramo. Kroz napredne algoritme i duboko učenje, UI sustavi postaju sve sofisticiraniji, sposobni za obavljanje kompleksnih zadataka koji su nekada bili isključiva domena ljudskog uma. Ključni aspekti razvoja UI uključuju etička pitanja, regulaciju i održivost. Kako tehnologija napreduje, postaje sve važnije osigurati da se UI razvija na način koji poštuje ljudske vrijednosti i promiče dobrobit društva. Osim toga, integracija UI u različite industrije otvara nove mogućnosti za inovacije i rješavanje globalnih izazova, od klimatskih promjena do zdravstvene skrbi. Budućnost UI obećava transformaciju gotovo svakog aspekta našeg života, ali zahtijeva i odgovorno upravljanje kako bi se osiguralo da tehnologija služi općem dobru.
+            </p>
+            <footer class="fusnota">
+                <p>Prompt u alatu ChatGPT: "Napiši detaljan paragraf o budućnosti umjetne inteligencije, fokusirajući se na etičke aspekte, regulaciju i potencijalne primjene u različitim industrijama. Paragraf treba biti informativan i optimističan, ali i realan o izazovima."</p>
+            </footer>
+        </section>
+
+        <section class="ai-sekcija">
+            <h2>Utjecaj umjetne inteligencije na društvo</h2>
+            <p>
+                Implementacija umjetne inteligencije u svakodnevni život donosi duboke promjene u strukturi društva i načinu na koji pojedinci komuniciraju i rade. S jedne strane, UI tehnologije pružaju bezprecedentne mogućnosti za automatizaciju rutinskih zadataka, povećanje produktivnosti i rješavanje kompleksnih problema. S druge strane, široka implementacija UI izaziva zabrinutost vezanu uz gubitak radnih mjesta, privatnost podataka i potencijalne nejednakosti u pristupu tehnologiji. Ključno je razumjeti da UI nije samo tehnički alat, već i društveni fenomen koji zahtijeva multidisciplinarni pristup u razumijevanju njegovih implikacija. Obrazovni sustavi moraju se prilagoditi kako bi pripremili buduće generacije za rad u svijetu gdje je UI sveprisutna, dok političke institucije moraju razviti odgovarajuće okvire za regulaciju i upravljanje ovom tehnologijom. Konačno, javna rasprava o UI treba biti inkluzivna i transparentna, uključujući različite perspektive i osiguravajući da koristi tehnologije budu ravnomjerno raspodijeljene kroz društvo.
+            </p>
+            <footer class="fusnota">
+                <p>Prompt u alatu ChatGPT: "Napiši detaljan paragraf o društvenom utjecaju umjetne inteligencije, fokusirajući se na pozitivne i negativne aspekte, obrazovanje i potrebu za regulacijom. Paragraf treba biti balansiran i realan o izazovima i mogućnostima."</p>
+            </footer>
+        </section>
+    </main>
+
+    <section id="obrazac-kontakt">
+        <h2>Kontakt obrazac</h2>
+        <form action="https://spider.foi.hr/OWT/materijali/ispis_forme.php" method="POST" enctype="multipart/form-data">
+            <div class="obrazac-grupa">
+                <label for="ime">Ime:</label>
+                <input type="text" id="ime" name="ime" required>
+            </div>
+
+            <div class="obrazac-grupa">
+                <label for="prezime">Prezime:</label>
+                <input type="text" id="prezime" name="prezime" required>
+            </div>
+
+            <div class="obrazac-grupa">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="obrazac-grupa">
+                <label for="datum">Datum rođenja:</label>
+                <input type="date" id="datum" name="datum" required>
+            </div>
+
+            <div class="obrazac-grupa">
+                <label for="alat">Omiljeni AI alat:</label>
+                <select id="alat" name="alat" required>
+                    <option value="">Odaberite alat</option>
+                    <option value="chatgpt">ChatGPT</option>
+                    <option value="dalle">DALL·E</option>
+                    <option value="copilot">GitHub Copilot</option>
+                </select>
+            </div>
+
+            <div class="obrazac-grupa">
+                <label for="uvjeti">
+                    <input type="checkbox" id="uvjeti" name="uvjeti" required>
+                    Prihvaćam uvjete korištenja
+                </label>
+            </div>
+
+            <div class="obrazac-grupa">
+                <label>Spol:</label>
+                <div class="radio-grupa">
+                    <input type="radio" id="musko" name="spol" value="musko" required>
+                    <label for="musko">Muško</label>
+                    <input type="radio" id="zensko" name="spol" value="zensko">
+                    <label for="zensko">Žensko</label>
+                </div>
+            </div>
+
+            <div class="obrazac-grupa">
+                <label for="iskustvo">Godine iskustva:</label>
+                <input type="number" id="iskustvo" name="iskustvo" min="0" max="50" required>
+            </div>
+
+            <div class="obrazac-grupa">
+                <label for="lozinka">Lozinka:</label>
+                <input type="password" id="lozinka" name="lozinka" required>
+            </div>
+
+            <div class="obrazac-grupa">
+                <label for="ponovljena-lozinka">Ponovite lozinku:</label>
+                <input type="password" id="ponovljena-lozinka" name="ponovljena-lozinka" required>
+            </div>
+
+            <div class="obrazac-grupa">
+                <label for="komentar">Komentar:</label>
+                <textarea id="komentar" name="komentar" rows="4" required></textarea>
+            </div>
+
+            <div class="obrazac-grupa">
+                <label for="url">URL stranice:</label>
+                <input type="url" id="url" name="url" required>
+            </div>
+
+            <div class="obrazac-grupa">
+                <label for="datoteka">Priložite datoteku:</label>
+                <input type="file" id="datoteka" name="datoteka" accept=".pdf,.doc,.docx">
+            </div>
+
+            <div class="obrazac-grupa">
+                <label for="telefon">Telefon:</label>
+                <input type="tel" id="telefon" name="telefon" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                <small>Format: 123-456-7890</small>
+            </div>
+
+            <div class="obrazac-grupa">
+                <label for="boja">Omiljena boja:</label>
+                <input type="color" id="boja" name="boja" value="#000000">
+            </div>
+
+            <div class="obrazac-grupa">
+                <label for="ocjena">Ocijeni korisnost AI alata (1–10):</label>
+                <input type="range" id="ocjena" name="ocjena" min="1" max="10" value="5" oninput="this.nextElementSibling.value = this.value">
+                <output class="ocjena-vrijednost">5</output>
+            </div>
+
+            <div class="obrazac-grupa">
+                <label for="pretraga">Pretraži ključne riječi vezane uz AI alate:</label>
+                <input type="search" id="pretraga" name="pretraga" placeholder="npr. generiranje teksta, slika...">
+            </div>
+
+            <div class="obrazac-grupa gumbi">
+                <button type="submit">Pošalji</button>
+                <button type="reset">Očisti</button>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        
+        <div class="footer-ikone">
+            <a href="https://chat.openai.com/" target="_blank" title="ChatGPT">
+                <img src="resursi/slike/GPT_logo.png" alt="ChatGPT ikona">
+            </a>
+            <a href="https://openai.com/dall-e-3" target="_blank" title="DALL·E">
+                <img src="resursi/slike/DALLE_logo.webp" alt="DALL·E ikona">
+            </a>
+            <a href="https://github.com/features/copilot" target="_blank" title="GitHub Copilot">
+                <img src="resursi/slike/Github_copilot.jpg" alt="GitHub Copilot ikona">
+            </a>
+        </div>
+        <p class="footer-autor">David Sedlan &copy; 2025</p>
+        <div class="footer-validacija">
+            <a href="http://validator.w3.org/check?uri=spider.foi.hr/OWT/2025/zadaca_01/dsedlan22/index.html">
+                <img width="35" height="35" src="https://spider.foi.hr/OWT/materijali/slike/HTML5.png" alt="Valid HTML5">
+            </a>
+        </div>
+    </footer>
+</body>
+</html> 

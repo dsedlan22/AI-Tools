@@ -1,0 +1,196 @@
+/* PreNema horizontalnog scrolla */
+html, body { 
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+}
+
+/* Glavni stil */
+body {
+  padding: 1rem;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Kontejner za sve sadržaje */
+main, header, footer, section {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Postavke širine obrazca */
+#obrazac-kontakt {
+  width: 50%;
+  margin: 0 auto;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Stilovi za mobilne uređaje */
+@media (max-width: 768px) {
+  body {
+    padding: 0.5rem;
+  }
+
+  #obrazac-kontakt {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  nav ul { 
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+    width: 100%;
+  }
+
+  nav ul li { 
+    margin: 0.25rem;
+    max-width: 100%;
+  }
+
+  nav a {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+    white-space: nowrap;
+  }
+
+  .slajd, 
+  .obrazac-grupa input, 
+  .obrazac-grupa select, 
+  .obrazac-grupa textarea { 
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+
+  .profil-sadrzaj { 
+    flex-direction: column; 
+    text-align: center; 
+  }
+
+  .galerija { 
+    grid-template-columns: 1fr; 
+  }
+
+  .video-okviri { 
+    grid-template-columns: 1fr; 
+  }
+
+  /* Tablice bez horizontalnog scrolla */
+  .tablica-sekcija {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .tablica-poveznica {
+    width: 100%;
+    font-size: 14px;
+    table-layout: fixed;
+  }
+  
+  .tablica-poveznica th,
+  .tablica-poveznica td {
+    padding: 6px;
+    white-space: normal;
+    word-wrap: break-word;
+  }
+}
+
+/* Stil za tablete */
+@media (max-width: 800px) {
+  #obrazac-kontakt {
+    width: 70%;
+    padding: 0 1rem;
+  }
+}
+
+/* Stilovi za male mobilne uređaje */
+@media (max-width: 480px) {
+  #obrazac-kontakt {
+    width: 95%;
+    padding: 0 0.5rem;
+  }
+
+  nav ul {
+    gap: 0.3rem;
+  }
+
+  nav a {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.85rem;
+  }
+
+  .alat-sekcija, 
+  .reddit-kartica { 
+    padding: 1rem; 
+    margin: 1rem 0; 
+  }
+
+  .alat-sekcija h2 { 
+    font-size: 1.5rem; 
+  }
+
+  .reddit-kartica a { 
+    font-size: 1rem; 
+  }
+  
+  .tablica-poveznica {
+    font-size: 12px;
+  }
+  
+  .tablica-poveznica th,
+  .tablica-poveznica td {
+    padding: 4px;
+  }
+}
+
+/* Stilovi za desktop uređaje */
+@media (min-width: 1025px) {
+  #obrazac-kontakt {
+    width: 50%;
+    max-width: 600px;
+  }
+
+  .galerija { 
+    column-count: 3; 
+    column-gap: var(--gap); 
+  }
+
+  .galerija-stupac { 
+    break-inside: avoid; 
+    margin-bottom: var(--gap); 
+  }
+}
+
+/* Responzivnost header-a */
+@media (max-width: 768px) {
+  .header-sadrzaj {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .logo {
+    height: 40px;
+  }
+
+  .naslov-stranice {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    height: 30px;
+  }
+
+  .naslov-stranice {
+    font-size: 1.2rem !important;
+  }
+} 

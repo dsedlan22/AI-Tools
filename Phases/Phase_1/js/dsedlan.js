@@ -1,0 +1,1 @@
+// JavaScript kod za web aplikaciju AI alata 
